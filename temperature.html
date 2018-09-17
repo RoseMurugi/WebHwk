@@ -11,7 +11,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Cloudiness</title>
+    <title>Weather Dashboard</title>
 
   </head>
   <body>
@@ -58,15 +58,15 @@
         <div class="col-lg-7">
           <div class="section-background-main">
             <div class="">
-              <h1>Latitude vs. Cloudiness</h1>
+              <h1>Latitude vs. Temperature</h1>
             </div>
 
             <div class="linebreak"></div>
 
             <div class="summary-text">
-              <img src="assets/images/Fig3.png" alt="max temp graph" id="detail-img" class="responsive-img">
+              <img src="assets/images/Fig1.png" alt="max temp graph" id="detail-img" class="responsive-img">
 
-              <p>It is cloudier north of the equator between 30-70 degrees. There is a larger varaiety of cloudiness as well, concentration at 0, 20, 40, 80, 90, 100. However, south of the equator, there is only a concetration at around 80. You can also see, that the area with the least cloudiness, is right along the equator</p>
+              <p>As expected, the weather become significantly warmer as one approaches the equator (0 Deg. Lattitude). You can also see that there are less datapoints as the lattitude gets lower, this is due to the fact that there are no landmasses after -60 besides at the south pole. More interestingly, however, is the fact that the souther hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of year this data was gathered</p>
 
             </div>
           </div>
@@ -79,11 +79,11 @@
             <div class="linebreak"></div>
 
             <div class="row">
-              <div class="viz-thumbs"><a href="temperature.html">
-                  <img src="assets/fimages/Fig1.png" alt="Max Temperature" class=
+              <div id="selected-thumb" class="viz-thumbs"><a href="temperature.html">
+                  <img src="assets/images/Fig1.png" alt="Max Temperature" class=
                   "responsive-thumb">
               </a></div>
-              <div id="selected-thumb" class="viz-thumbs"><a href="cloudiness.html">
+              <div class="viz-thumbs"><a href="cloudiness.html">
                   <img src="assets/images/Fig3.png" alt="Cloudiness" class=
                   "responsive-thumb">
               </a></div>
@@ -112,7 +112,7 @@
 
         <div class="col text-center">
 
-            <p id="footer-text">&copy; RoseW Bootcamp 2018</p>
+            <p id="footer-text">&copy; 2018 Bootcamp RoseW</p>
 
         </div>
       </div>
@@ -120,5 +120,10 @@
 
 
     
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </body>
 </html>
